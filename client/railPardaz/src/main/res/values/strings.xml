@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Net Demo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_vagon">VagonActivity</string>
+    <string name="title_activity_activity_submit_error">ActivitySubmitError</string>
+    <string name="title_activity_activity_final_submit_error">ActivityFinalSubmitError</string>
+    <string name="drawar_logoff">خروج از حساب</string>
+    <string name="drawar_sync">همگام سازی گزارشات</string>
+    <string name="title_activity_activity_prob">ActivityProb</string>
+    <string name="title_activity_activity_report">ActivityReport</string>
+
+    <string name="copyright">کلیه حقوق محفوظ است و متعلق به فن طراحی می باشد © 2017</string>
+    <string name="login_header_title">سامانه نگهداری و تعمیرات شرکت فن طراحی</string>
+
+</resources>

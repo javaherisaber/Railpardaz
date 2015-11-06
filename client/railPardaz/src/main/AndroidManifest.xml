@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.androjavan.railpardaz.net">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.ActivityLogin"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.ActivityVagon"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.ActivitySubmitError"
+            android:label="@string/title_activity_activity_submit_error"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.ActivityFinalSubmitError"
+            android:label="@string/title_activity_activity_final_submit_error"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+
+        <receiver android:name=".sync.InternetBroadcast" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".sync.BootCompletedBroadCast"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".sync.NotificationService" >
+        </service>
+
+        <receiver
+            android:name=".sync.ServiceDestroyReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="YouWillNeverKillMe" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="ir.androjavan.railpardaz.net.activity.ActivityProb"
+            android:label="@string/title_activity_activity_prob" >
+        </activity>
+        <activity
+            android:name="ir.androjavan.railpardaz.net.activity.ActivityReport"
+            android:label="@string/title_activity_activity_report" >
+            
+        </activity>
+    </application>
+
+</manifest>
