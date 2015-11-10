@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ir.andorjavan.railpardaz.net.VagonActivity" >
+
+    <item
+        android:id="@+id/action_submit_errors"
+        android:orderInCategory="100"
+        android:title="ثبت خطا"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_doucumentation"
+        android:orderInCategory="100"
+        android:title="مستندات"
+        app:showAsAction="never"/>
+
+</menu>

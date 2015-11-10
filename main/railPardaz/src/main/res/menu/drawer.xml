@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ir.andorjavan.railpardaz.net.Login" >
+
+    <item
+        android:id="@+id/action_sync"
+        android:orderInCategory="100"
+        android:title="@string/drawar_sync"
+        android:icon="@drawable/ic_sync"
+        app:showAsAction="never"/>
+    
+    <item
+        android:id="@+id/action_logoff"
+        android:orderInCategory="100"
+        android:title="@string/drawar_logoff"
+        android:icon="@drawable/ic_logg_off"
+        app:showAsAction="never"/>
+    
+    
+
+</menu>
